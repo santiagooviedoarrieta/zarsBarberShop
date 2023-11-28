@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.responsive-iframe {
+    position: relative;
+    padding-top: 56.25%;
+    
+    
+  }
+  .title2{
+    margin-top: 50px;
+    text-align: center;
+  }
+  /*No lleva punto cuando no es una clase creada por vos*/
+  h5{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .redes{
+    margin-top: 100px;
+  }
+
+
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.style{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+    .table {
+      margin-top: 3rem;
+      width: 100%;
+      margin-bottom: 5rem;
+      color: #212529;
+  }
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.table td, .table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+th {
+    text-align: inherit;
+}
+
+.header{
+    background-image: url(imagen_de_acerca_de.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+
+
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover {
+    color: #e67e22;
+}
+#menu {
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.header-txt{
+    text-align: center;
+}
+.header-txt h1{
+    font-size: 85px;
+    color: #fffdfc;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+.header-txt p{
+    color: #bebebe;
+    /*Tamaño de la letra*/
+    font-size: 16px;
+    /*Alto y ancho del texto (el 0 es q ocupa toda la caja)*/
+    padding: 0 250px;
+    margin-bottom: 45px;
+}
+.btn-1{
+    /*Tipo de display*/
+    display: inline-block;
+    /*Alto y luego ancho del boton*/
+    padding: 12px 45px;
+    /*Grosor del borde del boton*/
+    border: 1px solid #fffdfc;
+    /*Color del boton*/
+    color:#fffdfc;
+    /*Tamaño de la letra*/
+    font-size: 16px;
+    /*Letras MAYUSCULAS*/
+    text-transform: uppercase;
+    /*Grosor de las letras*/
+    font-weight: 600;
+}
+.btn-1:hover{
+    /*Color del Texto*/
+    color: #1b293a;
+    /*Color del fondo*/
+    background-color: #fffdfc;
+}
+h2{
+    /*Tamaño de los subtitulos*/
+    font-size: 50px;
+    /*Transforma los textos a letra MAYUSCULA*/
+    text-transform: uppercase;
+    /*Color del texto*/
+    color: #1b293a;
+}
+.txt h3{
+    /*Tamaño de la letra*/
+    font-size: 18px;
+    /*Color de la letra*/
+    color: #fffdfc;
+    /*Transforma a MAYUSCULAS*/
+    text-transform: uppercase;
+    /*Margen desde el texto hacia abajo*/
+    margin-bottom: 10px;
+}
+.txt p{
+    /*Color de la letra*/
+    color: #ebebeb;
+    /*Tamaño de la letra*/
+    font-size: 18px;
+
+}
+/*Modificamos la imagen de fondo del contenedor de informacion*/
+.info-1{
+    /*Separacion de arriba (250) y izquierda (0)*/
+    padding: 400px 0;
+    /*imagen de fondo*/
+    background-image: url(bg2.png);
+    /*Posicion de la imagen*/
+    background-position: center;
+    /*Para que la imagen no se repita*/
+    background-repeat: no-repeat;
+    /*Ancho y Alto que va a ocupar dentro del div info*/
+    background-size: 100% 100%;
+
+}
+/*Centramos la informacion de los contenedores*/
+.info-content{
+    /*Centra el contenido*/
+    text-align: center;
+}
+/*Color de la letra de los contenedores de informacion*/
+.info-content h2, span{
+    color: #fffdfc;
+
+}
+/*Modificamos la informacion del circulo*/
+.info-circle{
+    /*Alinea Horizontalmente*/
+    display: flex;
+    /*Deja separacion entre los contenidos*/
+    justify-content: space-between;
+    /*Margen de arriba*/
+    margin-top: 45px;
+
+}
+/*Modificamos la foto de fondo del contenedor info-2*/
+.info-2{
+    /*Separacion de arriba y izquierda igual que en info-1*/
+    padding: 250px 0;
+    /*Imagen de fondo a poner*/
+    background-image: url(bg3.png);
+    /*Centrado de la imagen en todos lados*/
+    background-position: center center;
+    /*Para que la imagen no se repita*/
+    background-repeat: no-repeat;
+    /*Ancho y alto que ocupa dentro del div info-2*/
+    background-size: 100% 100%;
+
+}
+
+.footer{
+    /*100px hacia arriba (separacion) 0 hacia abajo 0 derecha y 0 izquierda*/
+    padding: 100px 0 0 0;
+    /*Alineacion del texto*/
+    text-align: center;
+
+}
+/*Modificamos el form del */
+.form{
+    /*Margen de arriba*/
+    margin-top: 35px;
+
+}
+/*Modificamos el campo donde se introduce el texto*/
+.campo{
+    /*Margen de la derecha*/
+    margin-right: 10px;
+    /*17px arriba y abajo 35px izquierda y derecha (separacion)*/
+    padding: 17px 35px ;
+    /*Borde del campo de texto*/
+    border: 2px solid #b4b4b4;
+    /*Al escribir el campo de texto no se pondra mas oscuro (efecto por defalut que viene)*/
+    outline: none;
+    color: #1b293a;
+}
+/*Modificamos el color de las letras que estan dentro del campo de texto*/
+.campo::placeholder{
+    color: #b4b4b4;
+}
+/*Modificamos el boton de enviar de los campos de texto*/
+.btn-2{
+    /*arriba y abajo izquierda y derecha (separacion)*/
+    padding: 17px 35px;
+    /*Borde del boton, tipo de borde y color de borde*/
+    border: 2px solid #1b293a;
+    /*Color de letra del boton*/
+    color:#fffdfc ;
+    /*Color de fondo del boton*/
+    background-color:#1b293a ;
+    /*Radio del boton*/
+    border-radius: 10px;
+}
+/*Modificamos el */
+.footer-txt{
+    /*Margen superior*/
+    margin-top: 100px;
+    /*Borde de arriba*/
+    border-top: 1px solid #b4b4b47e;
+    /*Separacion de arriba y abajo y izquierda y derecha*/
+    padding: 20px 0;
+}
+/*Modificamos el parrafo del div de abajo de la pantalla*/
+.footer-txt p{
+    /*Color de la letra del parrafo*/
+    color: #1b293a;
+    /*Tamaño de la letra*/
+    font-size: 16px;
+}
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+  }
+  nav a:hover {
+    color: black;
+  }
+  .links {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    display: flex;
+    background-color: #e67e22;
+  }
+  .titu_links {
+    color: blue;
+  }
+  .titu_links:hover {
+    color: black;
+  }
+  .titu_links  .h4,h4 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+  .card-title {
+    min-height: 3rem;
+  }
+  .card-text {
+    min-height: 10rem;
+  }
+  .float-right {
+    float: right!important;
+    text-align: center;
+
+}
+
+
+/*Aqui ubicamos los parametros para un smartphone*/
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1b293a;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header{
+        min-height: 0vh;
+        margin-bottom: 50px;
+
+    }
+    .header-content{
+        padding: 100px 30px;
+
+    }
+    .header-txt h1{
+        font-size: 50px;
+
+    }
+    .header-txt p{
+        padding: 0;
+    }
+
+   .info-1{
+    padding: 250px 30px;
+    background-size: cover;
+    margin-top: -110px;
+   }
+
+   .info-circle{
+    flex-direction: column;
+    align-items: center;
+   }
+   .g2{
+    margin-top: -120px;
+   }
+   .info-2{
+    padding: 280px 30px;
+    background-size: cover;
+    margin-top: -180px;
+
+   }
+   h2{
+    font-size: 30px;
+   }
+   .footer h2{
+    margin-top: 100px;
+   }
+   .footer{
+    padding: 0;
+    margin-top: 0px;
+   }
+   form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+   }
+   .campo{
+    margin: 0 0 10px 0;
+   }
+   .footer-txt{
+    margin-top: 30px;
+   }
+   .style{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+    .table {
+      margin-top: 3rem;
+      width: 100%;
+      margin-bottom: 5rem;
+      color: #212529;
+  }
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.table td, .table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+th {
+    text-align: inherit;
+}
+.responsive-iframe {
+    position: relative;
+    padding-top: 56.25%;
+  }
+  .responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .img2{
+    height:230px;
+  }
+  iframe {
+      width: 340px;
+      height: 390px;
+  }
+}
